@@ -1,0 +1,38 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "update.showReleaseNotes": false,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.enableExperiments": false,
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.editor.enablePreview": false,
+    "window.autoDetectColorScheme": true,
+    "window.openFilesInNewWindow": "on",
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.git": false,
+        "**/.env": false
+    },
+    "editor.tabSize": 2,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+}
