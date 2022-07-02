@@ -36,4 +36,5 @@
         }
     },
     "workbench.iconTheme": "material-icon-theme",
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe"
 }
