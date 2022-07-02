@@ -12,7 +12,7 @@
     "workbench.colorTheme": "GitHub Dark",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     "window.autoDetectColorScheme": true,
     "window.openFilesInNewWindow": "on",
     "files.eol": "\n",
