@@ -15,6 +15,7 @@
     "workbench.editor.enablePreview": true,
     "window.autoDetectColorScheme": true,
     "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
     "files.eol": "\n",
     "files.exclude": {
         "**/.git": false,
