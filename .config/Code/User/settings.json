@@ -1,112 +1,125 @@
 {
-    "telemetry.telemetryLevel": "off",
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "update.showReleaseNotes": false,
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "security.workspace.trust.untrustedFiles": "open",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.enableExperiments": false,
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.preferredDarkColorTheme": "GitHub Dark",
-    "workbench.preferredLightColorTheme": "GitHub Light",
-    "workbench.editor.enablePreview": true,
-    "window.autoDetectColorScheme": true,
-    "window.openFilesInNewWindow": "on",
-    "window.openFoldersInNewWindow": "on",
-    "files.eol": "\n",
-    "files.exclude": {
-        "**/.git": false,
-        "**/.env": false
+  "telemetry.telemetryLevel": "off",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "update.showReleaseNotes": false,
+  //"editor.fontFamily": "JetBrainsMono Nerd Font",
+  //"editor.fontFamily": "FiraMono Nerd Font Mono",
+  //"editor.fontFamily": "FuraMono NF",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.enableExperiments": false,
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.editor.enablePreview": true,
+  "window.autoDetectColorScheme": true,
+  "window.openFilesInNewWindow": "on",
+  "window.openFoldersInNewWindow": "on",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.env": false
+  },
+  "editor.tabSize": 2,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
     },
-    "editor.tabSize": 2,
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\windows\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu-20.04"
-            ]
-        }
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.wordWrap": "on",
+  "security.workspace.trust.banner": "never",
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": false,
+  "prettier.singleQuote": true,
+
+  "todohighlight.keywords": [
+    {
+      "text": " NOTE: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #2980b9",
+      "borderRadius": "10px",
+      "backgroundColor": "#3498db"
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "todohighlight.keywords": [
-        {
-          "text": " NOTE: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #2980b9",
-          "borderRadius": "10px",
-          "backgroundColor": "#3498db"
-        },
-        {
-          "text": " note: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #2980b9",
-          "borderRadius": "10px",
-          "backgroundColor": "#3498db"
-        },
-        {
-          "text": " HACK: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #8e44ad",
-          "borderRadius": "10px",
-          "backgroundColor": "#9b59b6"
-        },
-        {
-          "text": " hack: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #8e44ad",
-          "borderRadius": "10px",
-          "backgroundColor": "#9b59b6"
-        },
-        {
-          "text": " FIXME: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #f39c12",
-          "borderRadius": "10px",
-          "backgroundColor": "#f1c40f"
-        },
-        {
-          "text": " fixme: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #f39c12",
-          "borderRadius": "10px",
-          "backgroundColor": "#f1c40f"
-        },
-        {
-          "text": " BUG: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #c0392b",
-          "borderRadius": "10px",
-          "backgroundColor": "#e74c3c"
-        },
-        {
-          "text": " bug: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #c0392b",
-          "borderRadius": "10px",
-          "backgroundColor": "#e74c3c"
-        },
-        {
-          "text": " TODO: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #27ae60",
-          "borderRadius": "10px",
-          "backgroundColor": "#2ecc71"
-        },
-        {
-          "text": " todo: ",
-          "color": "#ecf0f1",
-          "border": "1px solid #27ae60",
-          "borderRadius": "10px",
-          "backgroundColor": "#2ecc71"
-        }
-      ],
-    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe"
+    {
+      "text": " note: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #2980b9",
+      "borderRadius": "10px",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "text": " HACK: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #8e44ad",
+      "borderRadius": "10px",
+      "backgroundColor": "#9b59b6"
+    },
+    {
+      "text": " hack: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #8e44ad",
+      "borderRadius": "10px",
+      "backgroundColor": "#9b59b6"
+    },
+    {
+      "text": " FIXME: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "10px",
+      "backgroundColor": "#f1c40f"
+    },
+    {
+      "text": " fixme: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "10px",
+      "backgroundColor": "#f1c40f"
+    },
+    {
+      "text": " BUG: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "10px",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": " bug: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "10px",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": " TODO: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #27ae60",
+      "borderRadius": "10px",
+      "backgroundColor": "#2ecc71"
+    },
+    {
+      "text": " todo: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #27ae60",
+      "borderRadius": "10px",
+      "backgroundColor": "#2ecc71"
+    }
+  ],
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Omni",
+  "terminal.integrated.fontFamily": "monospace"
 }

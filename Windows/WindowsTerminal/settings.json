@@ -44,10 +44,12 @@
             "colorScheme": "Aurelia",
             "cursorHeight": 50,
             "cursorShape": "filledBox",
+            "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "JetBrainsMono Nerd Font",
-                "size": 11
+                "face": "FiraCode Nerd Font",
+                "size": 11,
+                "weight": "normal"
             },
             "historySize": 9001,
             "opacity": 80,
@@ -60,7 +62,7 @@
             {
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
-                "name": "Ubuntu Linux",
+                "name": "Ubuntu-20.04 LTS",
                 "source": "Windows.Terminal.Wsl"
             },
             {
@@ -83,6 +85,11 @@
                 "icon": "%PROGRAMFILES%/Git/mingw64/share/git/git-for-windows.ico",
                 "name": "Bash",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": true,
+                "name": "Windows PowerShell"
             }
         ]
     },
@@ -340,6 +347,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-22.04-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
         },
         {
             "background": "#000000",
