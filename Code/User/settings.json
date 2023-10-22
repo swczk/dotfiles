@@ -1,0 +1,181 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "update.showReleaseNotes": false,
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  // "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  // "workbench.preferredLightColorTheme": "Catppuccin Frappé",
+  "workbench.editor.enablePreview": true,
+  "window.openFilesInNewWindow": "on",
+  "window.openFoldersInNewWindow": "on",
+  "debug.toolBarLocation": "docked",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.env": false
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "native",
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "security.workspace.trust.banner": "never",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "editor.lineNumbers": "relative",
+  // VIM Config
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // "vim.neovimPath": "/usr/bin/nvim",
+  // "vim.enableNeovim": true,
+  // "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  // "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.lua",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "[yaml]": {
+    "editor.tabSize": 3
+  },
+  "codesnap.realLineNumbers": true,
+  "codesnap.backgroundColor": "",
+  "codesnap.transparentBackground": true,
+  "codesnap.boxShadow": "",
+  "polacode.transparentBackground": true,
+  "polacode.shadow": "",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "debug.onTaskErrors": "showErrors",
+  "cmake.cmakePath": "/usr/local/bin/cmake",
+  "cmake.sourceDirectory": "${workspaceRoot}/projects/projname",
+  "cmake.buildDirectory": "${workspaceRoot}/projects/projname",
+  "cmake.configureOnOpen": true,
+  "editor.tabSize": 3,
+  "todohighlight.keywords": [
+    {
+      "text": " NOTE: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #2980b9",
+      "borderRadius": "10px",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "text": " note: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #2980b9",
+      "borderRadius": "10px",
+      "backgroundColor": "#3498db"
+    },
+    {
+      "text": " HACK: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #8e44ad",
+      "borderRadius": "10px",
+      "backgroundColor": "#9b59b6"
+    },
+    {
+      "text": " hack: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #8e44ad",
+      "borderRadius": "10px",
+      "backgroundColor": "#9b59b6"
+    },
+    {
+      "text": " FIXME: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "10px",
+      "backgroundColor": "#f1c40f"
+    },
+    {
+      "text": " fixme: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "10px",
+      "backgroundColor": "#f1c40f"
+    },
+    {
+      "text": " BUG: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "10px",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": " bug: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "10px",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": " TODO: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #27ae60",
+      "borderRadius": "10px",
+      "backgroundColor": "#2ecc71"
+    },
+    {
+      "text": " todo: ",
+      "color": "#ecf0f1",
+      "border": "1px solid #27ae60",
+      "borderRadius": "10px",
+      "backgroundColor": "#2ecc71"
+    }
+  ],
+  "window.autoDetectColorScheme": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.commandCenter": true,
+  "terminal.external.osxExec": "alacritty",
+  "terminal.external.linuxExec": "alacritty",
+  "terminal.explorerKind": "both",
+}
