@@ -4,12 +4,8 @@
 </p>
 
 ### Linux
-* .bashrc
-* .bash_aliases
-* .inputrc
-* StarShip (starship.toml)
-
-### Windows
-* VSCode (settings.json)
-* Windows Terminal (settings.json)
-* PowerShell 7x (Microsoft.PowerShell_profile.ps1)
+* ZSH
+* NixOS
+* Alacritty
+* VSCode
+* StarShip
