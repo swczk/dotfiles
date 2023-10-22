@@ -4,18 +4,15 @@
   "git.autofetch": true,
   "update.showReleaseNotes": false,
   //"editor.fontFamily": "JetBrainsMono Nerd Font",
-  //"editor.fontFamily": "FiraMono Nerd Font Mono",
-  //"editor.fontFamily": "FuraMono NF",
   "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "workbench.enableExperiments": false,
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.editor.enablePreview": true,
-  "window.autoDetectColorScheme": true,
   "window.openFilesInNewWindow": "on",
   "window.openFoldersInNewWindow": "on",
   "files.eol": "\n",
@@ -23,7 +20,6 @@
     "**/.git": false,
     "**/.env": false
   },
-  "editor.tabSize": 2,
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -41,7 +37,7 @@
 
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "prettier.singleQuote": true,
 
   "todohighlight.keywords": [
@@ -116,10 +112,21 @@
       "backgroundColor": "#2ecc71"
     }
   ],
+  /*
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe",
+  */
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-  "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Omni",
-  "terminal.integrated.fontFamily": "monospace"
+  "go.toolsManagement.autoUpdate": true,
+  "php.validate.executablePath": "C://xampp//php//php.exe",
+  "[yaml]": {
+    "editor.tabSize": 4
+  },
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredHighContrastLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "Ayu Dark Bordered",
+  "codesnap.realLineNumbers": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "window.titleBarStyle": "custom",
+  "files.autoSave": "afterDelay"
 }
