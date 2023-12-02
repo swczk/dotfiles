@@ -1,7 +1,7 @@
 # ~/.config/starship.toml
 
 # Inserts a blank line between shell prompts
-add_newline = false
+add_newline = true
 
 # Setting Time out
 command_timeout = 10000
