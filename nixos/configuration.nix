@@ -1,8 +1,13 @@
-{ config, pkgs, ... }:
-
+{ config, pkgs, lib, ... }:
 let
   identity = import ./resources/identity.nix;
 
+  # nix-software-center = import (pkgs.fetchFromGitHub {
+  #   owner = "vlinkz";
+  #   repo = "nix-software-center";
+  #   rev = "0.1.2";
+  #   sha256 = "xiqF1mP8wFubdsAQ1BmfjzCgOD3YZf7EGWl9i69FTls=";
+  # }) {};
 in
 {
   imports =
@@ -11,7 +16,7 @@ in
       ./desktop.system.nix
       ./locale.system.nix
       ./boot.system.nix
-      ./virtualization.nix
+      # ./virtualization.nix
       ./security.nix
     ];
 
@@ -31,9 +36,12 @@ in
     driSupport = true;
     driSupport32Bit = true;
   };
+  environment.variables = {
+    LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:/run/opengl-driver/lib:/run/opengl-driver-32/lib";
+  };
   
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     # Modesetting is required.
     modesetting.enable = true;
@@ -139,25 +147,27 @@ in
     dunst
     pywal
     
+    obs-studio
+    openh264
+    ffmpeg
     x265
     x264
+    vlc
 
     tailscale
-    nodejs
-    cargo
 
     ## Desktop Apps
     telegram-desktop
+    libreoffice
     discord
     gparted
     vscode
     brave
-    vlc
     
-    ## Gnome Apps
-    # gnome.gedit
-    # gnome.nautilus
-    gnome.gnome-software
+    ## Rust Projects
+    lsd # The next gen ls command
+    ripgrep # A utility that combines the usability of The Silver Searcher with the raw speed of grep
+    #yazi # Blazing fast terminal file manager written in Rust, based on async I/O
 
     font-awesome
     fira-code
@@ -166,6 +176,12 @@ in
     wireshark
     docker-compose
 
+    ## Gnome Apps
+    # gnome.gedit
+    # gnome.nautilus
+    gnome.gnome-software
+    # nix-software-center
+
     ## C++ -->
     gcc
     gdb
@@ -173,6 +189,32 @@ in
     ## C# -->
     dotnet-sdk
     dotnet-runtime
+
+    ## JavaScript -->
+    nodejs
+
+    ## Go -->
+    go
+
+    ## Rust -->
+    rustc
+    cargo
+
+    ## JAVA -->
+    netbeans
+
+    ## OpenGL
+    glm
+    mesa
+    libGL
+    libGLU
+    freeglut
+
+    ## Raspberry Imager
+    rpi-imager
+
+    ## Temp
+    # anydesk
   ];
 
   programs.zsh = {
@@ -219,5 +261,4 @@ in
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
-
 }
