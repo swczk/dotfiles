@@ -1,10 +1,14 @@
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
-alias ls='ls -la'
 alias rm='rm -i'
 alias rmdir='rmdir -i'
+
+# LSD alias to LS
+alias ls='lsd'
+
+# RipGrep alias to Grep
+#alias grep='rg'
 
 alias apt='pkg'
 
@@ -14,4 +18,14 @@ alias pip='pip3'
 # Map Vim to Neovim
 alias vi='nvim'
 alias vim='nvim'
-alias nv='nvim'
+
+# Docker
+alias dco='docker-compose'
+alias de='docker exec'
+alias dr='docker run'
+alias dsh='docker exec -it `$(docker ps -q)` bash'
+alias dshalpine='docker exec -it $(docker ps -q) /bin/sh'
+alias dps='docker ps'
+alias dpa='docker ps -a'
+alias dl='docker ps -l -q'
+alias di='docker images'
