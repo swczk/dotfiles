@@ -30,7 +30,7 @@
     gnome-weather
     # gnome-photos
     gnome-contacts
-    # gnome-terminal
+    gnome-terminal
     pkgs.gnome-connections
   ];
   

@@ -47,7 +47,7 @@ in
     modesetting.enable = true;
 
     # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
-    powerManagement.enable = false;
+    powerManagement.enable = true;
     # Fine-grained power management. Turns off GPU when not in use.
     # Experimental and only works on modern Nvidia GPUs (Turing or newer).
     powerManagement.finegrained = false;
@@ -63,7 +63,7 @@ in
 
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.
-    nvidiaSettings = true;
+    nvidiaSettings = false;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
@@ -121,31 +121,31 @@ in
     unrar
     killall
 
-    rofi-wayland
-    hyprland
-    xdg-desktop-portal-wlr
-    waybar
-    grim
-    slurp
-    swayidle
-    swaylock
-    swappy
-    wofi
-    rofi
-    scrot
-    slock
-    xdg-utils # For opening default programs when clicking links
-    grim # Screenshot functionality
-    slurp # Screenshot functionality
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin/stdout
-    cliphist
-    swww
-    swaylock-effects
-    wlogout
-    polybar
-    qtile
-    dunst
-    pywal
+    # rofi-wayland
+    # hyprland
+    # xdg-desktop-portal-wlr
+    # waybar
+    # grim
+    # slurp
+    # swayidle
+    # swaylock
+    # swappy
+    # wofi
+    # rofi
+    # scrot
+    # slock
+    # xdg-utils # For opening default programs when clicking links
+    # grim # Screenshot functionality
+    # slurp # Screenshot functionality
+    # wl-clipboard # wl-copy and wl-paste for copy/paste from stdin/stdout
+    # cliphist
+    # swww
+    # swaylock-effects
+    # wlogout
+    # polybar
+    # qtile
+    # dunst
+    # pywal
     
     obs-studio
     openh264
@@ -163,6 +163,7 @@ in
     gparted
     vscode
     brave
+    firefox
     
     ## Rust Projects
     lsd # The next gen ls command
@@ -198,6 +199,7 @@ in
 
     ## Rust -->
     rustc
+    # rustfmt
     cargo
 
     ## JAVA -->
@@ -210,12 +212,23 @@ in
     libGLU
     freeglut
 
+    ## Static Website Engine
+    hugo
+
     ## Raspberry Imager
-    rpi-imager
+    # rpi-imager
 
     ## Temp
     # anydesk
+    gimp
   ];
+  
+  # pkgs.catppuccin-gtk.override {
+  #   accents = [ "mauve" ]; # You can specify multiple accents here to output multiple themes
+  #   size = "compact";
+  #   tweaks = [ "rimless" "black" ]; # You can also specify multiple tweaks here
+  #   variant = "mocha";
+  # };
 
   programs.zsh = {
     enable = true;
@@ -231,7 +244,7 @@ in
 
   programs.hyprland = {
 	  enable = true;
-	  nvidiaPatches = true;
+	  enableNvidiaPatches = true;
 	  xwayland.enable = true;
   };
 
