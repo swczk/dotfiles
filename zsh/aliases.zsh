@@ -8,7 +8,7 @@ alias rmdir='rmdir -i'
 alias ls='lsd'
 
 # RipGrep alias to Grep
-#alias grep='rg'
+alias grep='rg'
 
 alias apt='pkg'
 
