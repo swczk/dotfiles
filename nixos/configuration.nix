@@ -87,9 +87,9 @@ in
 	 # Define a user account. Don't forget to set a password with ‘passwd’.
 	users = {
 		defaultUserShell = pkgs.zsh;
-		users.pedrojosawczuk = {
+		users.swczk = {
 			isNormalUser = true;
-			home = "/home/pedrojosawczuk";
+			home = "/home/swczk";
 			description = "Pedro J de O Sawczuk";
 			extraGroups = [ "wheel" "networkmanager" "vboxsf" "docker" "audio" ];
 			shell = pkgs.zsh;

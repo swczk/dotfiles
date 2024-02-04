@@ -67,5 +67,5 @@ in
 	};
 	
 	# Permissions
-	users.users.pedrojosawczuk.extraGroups = [ "libvirtd" "podman" "network"];
+	users.users.swczk.extraGroups = [ "libvirtd" "podman" "network"];
 }

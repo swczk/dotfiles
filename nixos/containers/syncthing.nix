@@ -14,14 +14,14 @@
 		];
 		volumes = [
 			"/media/Archives/sawczukserver/selfhosted/syncthing:/config"
-			"/home/pedrojosawczuk/backups:/data/backups"
-			"/home/pedrojosawczuk/.oculta:/data/.oculta"
-			"/home/pedrojosawczuk/Music:/data/Music"
-			"/home/pedrojosawczuk/Videos:/data/Videos"
-			"/home/pedrojosawczuk/Downloads:/data/Downloads"
-			"/home/pedrojosawczuk/Documents:/data/Documents"
-			"/home/pedrojosawczuk/Pictures:/data/Pictures"
-			"/home/pedrojosawczuk/Pictures/Camera:/data/Camera"
+			"/home/swczk/backups:/data/backups"
+			"/home/swczk/.oculta:/data/.oculta"
+			"/home/swczk/Music:/data/Music"
+			"/home/swczk/Videos:/data/Videos"
+			"/home/swczk/Downloads:/data/Downloads"
+			"/home/swczk/Documents:/data/Documents"
+			"/home/swczk/Pictures:/data/Pictures"
+			"/home/swczk/Pictures/Camera:/data/Camera"
 		];
 		dependsOn = [ "traefik" ];
 		extraOptions = [

@@ -1,6 +1,6 @@
-[[ -f ~/dotfiles/zsh/aliases.zsh ]] && source ~/dotfiles/zsh/aliases.zsh
-[[ -f ~/dotfiles/zsh/functions.zsh ]] && source ~/dotfiles/zsh/functions.zsh
-[[ -f ~/dotfiles/zsh/starship.zsh ]] && source ~/dotfiles/zsh/starship.zsh
+[[ -f ~/.config/zsh/aliases.zsh ]] && source ~/.config/zsh/aliases.zsh
+[[ -f ~/.config/zsh/functions.zsh ]] && source ~/.config/zsh/functions.zsh
+[[ -f ~/.config/zsh/starship.zsh ]] && source ~/.config/zsh/starship.zsh
 
 #setopt HIST_EXPIRE_DUPS_FIRST
 #setopt HIST_IGNORE_DUPS
