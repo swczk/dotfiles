@@ -35,6 +35,6 @@ return {
 			--      end,
 		})
 
-		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { noremap = true, silent = true })
+		vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { noremap = true, silent = true })
 	end,
 }
