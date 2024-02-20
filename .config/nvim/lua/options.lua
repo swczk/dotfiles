@@ -3,24 +3,16 @@ vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
--- Fixes Notify opacity issues
-vim.o.termguicolors = true
-
--- Set highlight on search
-vim.o.hlsearch = true
+vim.o.termguicolors = true -- Fixes Notify opacity issues
+vim.o.hlsearch = true -- Set highlight on search
 
 -- Make line numbers default
-vim.wo.number = true
+-- vim.wo.number = true
 vim.o.relativenumber = true
 
--- Disable mouse mode
-vim.o.mouse = ""
-
--- Enable break indent
-vim.o.breakindent = true
-
--- Save undo history
-vim.o.undofile = true
+vim.o.mouse = "" -- Disable mouse mode
+vim.o.breakindent = true -- Enable break indent
+vim.o.undofile = true -- Save undo history
 
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
@@ -37,11 +29,8 @@ vim.wo.signcolumn = "yes"
 --vim.cmd()
 vim.opt.clipboard = "unnamedplus"
 
--- Set completeopt to have a better completion experience
-vim.o.completeopt = "menuone,noselect"
-
--- Concealer for Neorg
-vim.o.conceallevel = 2
+vim.o.completeopt = "menuone,noselect" -- Set completeopt to have a better completion experience
+vim.o.conceallevel = 2 -- Concealer for Neorg
 
 -- [[ Basic Keymaps ]]
 -- Set <space> as the leader key
@@ -49,3 +38,5 @@ vim.o.conceallevel = 2
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+-- vim.api.nvim_create_autocmd("VimEnter",{callback=function()require"lazy".update({show = false,})end}) -- AutoUpdate Lazy on Enter Vim

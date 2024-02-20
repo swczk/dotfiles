@@ -4,9 +4,13 @@ return {
 	priority = 1000,
 	config = function()
 		require("tokyonight").setup({
-		style = "night",
+			style = "night",
 			light_style = "day",
-			transparent = false,
+			transparent = true,
+			styles = {
+				sidebars = "transparent",
+				floats = "transparent",
+			},
 		})
 		vim.cmd.colorscheme("tokyonight")
 	end,
