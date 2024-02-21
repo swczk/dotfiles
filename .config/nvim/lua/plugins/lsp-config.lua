@@ -60,10 +60,12 @@ return {
 --				},
 --			})
 
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+			-- LSP
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { noremap = true, silent = true })
 		end,
 	},
 }

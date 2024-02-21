@@ -127,7 +127,7 @@ return {
 				position = "left",
 				width = 40,
 				mapping_options = {
-					noremap = true,
+					noremap = false,
 					nowait = true,
 				},
 				mappings = {
@@ -301,6 +301,6 @@ return {
 		})
 
 		vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
-		vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { noremap = true, silent = true })
 	end,
 }
