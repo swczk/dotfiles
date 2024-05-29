@@ -90,7 +90,7 @@ in
 		users.swczk = {
 			isNormalUser = true;
 			home = "/home/swczk";
-			description = "Pedro J de O Sawczuk";
+			description = "Pedro Sawczuk";
 			extraGroups = [ "wheel" "networkmanager" "vboxsf" "docker" "audio" ];
 			shell = pkgs.zsh;
 			packages = with pkgs; [
@@ -192,10 +192,10 @@ in
 		dotnet-runtime
 
 		## JavaScript -->
-		nodejs
+		# nodejs
 
 		## Go -->
-		go
+		# go
 
 		## Rust -->
 		rustc
@@ -203,7 +203,7 @@ in
 		cargo
 
 		## JAVA -->
-		netbeans
+		# netbeans
 
 		## OpenGL
 		glm
@@ -213,7 +213,7 @@ in
 		freeglut
 
 		## Static Website Engine
-		hugo
+		# hugo
 
 		## Raspberry Imager
 		# rpi-imager
