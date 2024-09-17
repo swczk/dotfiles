@@ -41,8 +41,8 @@ case $_distro in
     *manjaro*)               ICON=" ";;
     *rhel*)                  ICON=" ";;
     *macos*)                 ICON=" ";;
-    *)                       ICON=" ";;
-		#*)                       ICON=" ";;
+    *)                       ICON=" ";;
+    # *)                       ICON=" ";;
 esac
 
 # Export the distro icon and device
