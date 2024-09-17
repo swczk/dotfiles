@@ -5,7 +5,19 @@ alias rm='rm -i'
 alias rmdir='rmdir -i'
 
 # LSD alias to LS
-alias ls='lsd'
+alias ls='lsd -l'
+
+# CP with verbose
+alias cp='cp -v'
+
+# Bat alias to Cat
+alias cat='bat'
+
+# Fd alias to Find
+alias fd='find'
+
+# Procs alias to Ps
+alias procs='ps'
 
 # RipGrep alias to Grep
 alias grep='rg'
