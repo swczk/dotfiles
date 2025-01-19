@@ -2,20 +2,12 @@ return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = {
+		"nvim-treesitter/nvim-treesitter",
 		"nvim-lua/plenary.nvim",
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
-		"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 	config = function()
-		--    require("neo-tree").setup({
-		--    window = {
-		--    mappings = {
-		--    ["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
-		--      }
-		--   }
-		--})
-
 		-- If you want icons for diagnostic errors, you'll need to define them somewhere:
 		vim.fn.sign_define("DiagnosticSignError", { text = " ", texthl = "DiagnosticSignError" })
 		vim.fn.sign_define("DiagnosticSignWarn", { text = " ", texthl = "DiagnosticSignWarn" })
@@ -36,7 +28,6 @@ return {
 			popup_border_style = "rounded",
 			enable_git_status = true,
 			enable_diagnostics = false,
-			enable_normal_mode_for_inputs = false, -- Enable normal mode for input dialogs.
 			open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
 			sort_case_insensitive = false, -- used when sorting files and directories in the tree
 			sort_function = nil, -- use a custom function for sorting files and directories in the tree
@@ -214,13 +205,13 @@ return {
 					--               -- the current file is changed while the tree is open.
 					leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
 				},
-				group_empty_dirs = false, -- when true, empty folders will be grouped together
+				group_empty_dirs = true, -- when true, empty folders will be grouped together
 				hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
 				-- in whatever position is specified in window.position
 				-- "open_current",  -- netrw disabled, opening a directory opens within the
 				-- window like netrw would, regardless of window.position
 				-- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
-				use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
+				use_libuv_file_watcher = true, -- This will use the OS level file watchers to detect changes
 				-- instead of relying on nvim autocmd events.
 				window = {
 					mappings = {

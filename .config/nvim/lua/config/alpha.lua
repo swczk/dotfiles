@@ -208,8 +208,8 @@ local array = {
 
 local randomIndex = math.random(1, #array)
 
--- dashboard.section.header.val = array[randomIndex]
-dashboard.section.header.val = array[2]
+dashboard.section.header.val = array[randomIndex]
+-- dashboard.section.header.val = array[2]
 
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
