@@ -1,0 +1,80 @@
+* {
+   border: none;
+   border-radius: 0;
+   font-family: "FiraCode Nerd Font";
+   font-size: 15px;
+   min-height: 0;
+}
+
+window#waybar {
+   background: rgba(43, 48, 59, 0.5);
+   transition-property: background-color;
+   transition-duration: .5s;
+}
+
+#workspaces {
+   background: rgba(43, 48, 59, 0.4);
+   border-radius: 10px;
+   margin: 5px;
+   padding: 0 10px;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#tray {
+   background: rgba(43, 48, 59, 0.4);
+   color: #ffffff;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 0 10px;
+}
+
+#power-profiles-daemon.performance {
+   color: rgb(255, 100, 100);
+}
+
+#power-profiles-daemon.balanced {
+   color: rgb(100, 100, 255);
+}
+
+#power-profiles-daemon.power-saver {
+   color: rgb(100, 200, 100);
+}
+
+#battery.warning {
+   color: rgb(255, 210, 0);
+}
+
+#battery.critical {
+   color: rgb(255, 0, 0);
+   animation: blink 1s linear infinite;
+}
+
+#battery.charging {
+   color: rgb(100, 255, 100);
+}
+
+calendar {
+   background: rgba(43, 48, 59, 0.4);
+   border-radius: 10px;
+   padding: 5px;
+}
+
+calendar:selected {
+   background: rgba(100, 200, 255, 0.4);
+}
+
+calendar:indeterminate {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes blink {
+   to {
+      color: transparent;
+   }
+}
