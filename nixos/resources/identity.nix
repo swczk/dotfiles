@@ -1,5 +1,5 @@
 {
-	name.long = "Pedro J de O Sawczuk";
+	name.long = "Pedro Sawczuk";
 	name.short = "Pedro";
 	username = "swczk";
 }
