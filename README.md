@@ -4,8 +4,18 @@
 </p>
 
 ### Linux
+* Fedora/NixOS
+* Desktop
+ * Hyprland
+ * Hypridle
+ * Hyprlock
+ * Hyprpaper
+ * Waybar
+ * Wofi
+ * Swaync
+* Kitty
 * ZSH
-* NixOS
-* Alacritty
+* Zellij
+* On-My-Posh
+* NeoVim
 * VSCode
-* StarShip
