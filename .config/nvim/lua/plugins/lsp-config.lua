@@ -127,9 +127,13 @@ return {
 			lspconfig.gopls.setup({
 				cmd = { "gopls" },
 				capabilities = capabilities,
+				filetypes = { "go", "gomod", "gowork", "gotmpl" },
+        		root_dir = util.root_pattern("go.work", "go.mod", ".git"),
 				settings = {
 					gopls = {
 						experimentalPostfixCompletions = true,
+            		completeUnimported = true,
+            		usePlaceholders = true,
 						analyses = {
 							unusedparams = true,
 							shadow = true,
