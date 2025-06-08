@@ -1,19 +1,19 @@
 * {
    border: none;
    border-radius: 0;
-   font-family: "FiraCode Nerd Font";
+   font-family: "FiraCode Nerd Font, Medium";
    font-size: 15px;
    min-height: 0;
 }
 
 window#waybar {
-   background: rgba(43, 48, 59, 0.5);
+   background: rgba(0, 0, 0, 0.8);
    transition-property: background-color;
    transition-duration: .5s;
 }
 
 #workspaces {
-   background: rgba(43, 48, 59, 0.4);
+   background: rgba(25, 25, 25, 0.4);
    border-radius: 10px;
    margin: 5px;
    padding: 0 10px;
@@ -27,7 +27,7 @@ window#waybar {
 #temperature,
 #battery,
 #tray {
-   background: rgba(43, 48, 59, 0.4);
+   background: rgba(25, 25, 25, 0.4);
    color: #ffffff;
    border-radius: 10px;
    margin: 5px;
@@ -59,8 +59,12 @@ window#waybar {
    color: rgb(100, 255, 100);
 }
 
+#battery.plugged {
+   color: rgb(100, 255, 100);
+}
+
 calendar {
-   background: rgba(43, 48, 59, 0.4);
+   background: rgba(25, 25, 25, 0.4);
    border-radius: 10px;
    padding: 5px;
 }

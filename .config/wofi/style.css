@@ -1,0 +1,58 @@
+/* Estilo para o Wofi - compatível com Waybar */
+window {
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "FiraCode Nerd Font", Medium;
+    font-size: 15px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#input {
+    margin: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgba(25, 25, 25, 0.4);
+}
+
+#inner-box {
+    margin: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 5px;
+    border: none;
+}
+
+#text {
+    margin: 8px;
+    color: #ffffff;
+}
+
+#entry:selected {
+    border-radius: 10px;
+    background-color: rgba(100, 200, 255, 0.4);
+}
+
+#entry {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(25, 25, 25, 0.4);
+}
+
+#entry:selected #text {
+    color: #ffffff;
+}
