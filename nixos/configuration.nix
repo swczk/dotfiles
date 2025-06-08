@@ -124,15 +124,17 @@ in
 		killall
 		wl-clipboard
 
-		# rofi-wayland
+    # Hyprland desktop
 		hyprland
-		# xdg-desktop-portal-wlr
+    	hyprpaper
+    	hypridle
+    	hyprlock
+    	hyprnome
 		waybar
+		swaync
+		# xdg-desktop-portal-wlr
 		# grim
 		# slurp
-		# swayidle
-		# swaylock
-		# swappy
 		wofi
 		# rofi
 		# scrot
@@ -187,10 +189,10 @@ in
 		docker-compose
 
 		## Gnome Apps
-		# gnome.gedit
-		# gnome.nautilus
+		gnome.gedit
+		gnome.nautilus
 		gnome.gnome-software
-		# nix-software-center
+		nix-software-center
 
 		## C++ -->
 		gcc
@@ -204,7 +206,7 @@ in
 		# nodejs
 
 		## Go -->
-		# go
+		go
 
 		## Rust -->
 		rustc
