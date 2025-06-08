@@ -4,6 +4,9 @@ alias la='ls -A'
 alias rm='rm -i'
 alias rmdir='rmdir -i'
 
+# zoxide alias to cd
+alias cd='z'
+
 # LSD alias to LS
 alias ls='lsd -l'
 
@@ -32,7 +35,7 @@ alias vi='nvim'
 alias vim='nvim'
 
 # Docker
-alias dco='docker-compose'
+alias dco='docker compose'
 alias de='docker exec'
 alias dr='docker run'
 alias dsh='docker exec -it `$(docker ps -q)` bash'
